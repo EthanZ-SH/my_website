@@ -43,15 +43,15 @@ export const projects = [
 export const videoEmbeds = [
   {
     title: 'Cover Session 1',
-    url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    url: 'https://www.youtube.com/embed/mtLW6Vq7G9A?si=epd_bmDWEifaJ6BA',
   },
   {
     title: 'Cover Session 2',
-    url: 'https://www.youtube.com/embed/3JZ_D3ELwOQ',
+    url: 'https://www.youtube.com/embed/dWRCooFKk3c?si=13JfbsyVbV7hQIkm',
   },
   {
     title: 'Cover Session 3',
-    url: 'https://www.youtube.com/embed/l482T0yNkeo',
+    url: 'https://www.youtube.com/embed/-KG2O5PSCSs?si=X8oM_uxz9-pzoJUv',
   },
 ]
 
