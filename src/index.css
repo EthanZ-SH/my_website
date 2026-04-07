@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-base: #070910;
+  --bg-deep: #0a0a0f;
+  --card-bg: rgba(16, 22, 36, 0.58);
+  --card-border: rgba(0, 212, 255, 0.2);
+  --text-main: #e8f6ff;
+  --text-soft: #8aa8bc;
+  --electric: #00d4ff;
+  --electric-strong: #38e9ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 10% 15%, rgba(0, 212, 255, 0.14), transparent 35%),
+    radial-gradient(circle at 90% 5%, rgba(0, 162, 255, 0.1), transparent 30%),
+    linear-gradient(160deg, var(--bg-base) 0%, var(--bg-deep) 60%, #090d15 100%);
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.section-card {
+  position: relative;
+  border: 1px solid var(--card-border);
+  border-radius: 1.25rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(14px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 0 0 1px rgba(0, 212, 255, 0.05),
+    0 16px 40px rgba(2, 12, 22, 0.65);
+}
+
+.section-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    130deg,
+    rgba(0, 212, 255, 0.12),
+    transparent 30%,
+    transparent 70%,
+    rgba(0, 212, 255, 0.08)
+  );
+  opacity: 0.5;
+}
+
+.neon-hover {
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.neon-hover:hover {
+  border-color: rgba(0, 212, 255, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(0, 212, 255, 0.4),
+    0 0 24px rgba(0, 212, 255, 0.25),
+    0 20px 44px rgba(1, 9, 20, 0.72);
+  transform: translateY(-3px);
+}
+
+.neon-link {
+  color: var(--electric);
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.neon-link:hover {
+  color: var(--electric-strong);
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.45);
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.25rem;
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.07) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at 50% 40%, black 25%, transparent 95%);
+  pointer-events: none;
+}
