@@ -1,16 +1,56 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Single-page React portfolio built with Vite, Tailwind CSS, shadcn-style UI components, and Framer Motion.
 
-Currently, two official plugins are available:
+## How to access the website locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Open a terminal in this project folder.
+2. Install dependencies:
 
-## React Compiler
+```bash
+npm install
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. Start the dev server:
 
-## Expanding the ESLint configuration
+```bash
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Open your browser at:
+
+```text
+http://localhost:5173
+```
+
+## Useful scripts
+
+```bash
+npm run dev      # Start local development server
+npm run lint     # Run ESLint checks
+npm run build    # Create production build in /dist
+npm run preview  # Preview production build locally
+```
+
+## Access on other devices (same network)
+
+Run:
+
+```bash
+npm run dev -- --host
+```
+
+Then open the Network URL shown in terminal on your phone/laptop connected to the same Wi-Fi.
+
+## Where to edit your content
+
+- Section text, projects, videos, and timeline: `src/data/content.js`
+- Main page composition: `src/App.jsx`
+- Section components: `src/components/sections/`
+
+## Deploying online
+
+You can deploy this Vite app quickly to platforms like Vercel or Netlify by connecting your GitHub repo.
+
+- Build command: `npm run build`
+- Output directory: `dist`
