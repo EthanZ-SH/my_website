@@ -5,13 +5,13 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { FadeInSection } from '@/components/sections/FadeInSection'
 
-export function HeroSection() {
+export function HomeSection() {
   const MotionDiv = motion.div
 
   return (
-    <FadeInSection id="hero">
+    <FadeInSection id="home">
       <Card className="relative overflow-hidden p-6 sm:p-10">
-        <div className="hero-grid" />
+        <div className="home-grid" />
         <MotionDiv
           aria-hidden
           className="pointer-events-none absolute -left-24 top-0 h-52 w-52 rounded-full bg-[var(--electric)]/20 blur-3xl"
